@@ -85,13 +85,13 @@ enable_simple_send = false # You should only set this to true if your sending rp
 enabled = true
 enabled_bundle_groups = [1, 2, 3, 4, 5] # 减少到2个bundle组
 block_engine_urls = [
-#  "https://ny.mainnet.block-engine.jito.wtf/api/v1",
+  "https://ny.mainnet.block-engine.jito.wtf/api/v1",
   "https://tokyo.mainnet.block-engine.jito.wtf/api/v1",
   "https://slc.mainnet.block-engine.jito.wtf/api/v1",
   "https://amsterdam.mainnet.block-engine.jito.wtf/api/v1",
   "https://frankfurt.mainnet.block-engine.jito.wtf/api/v1",
   "https://singapore.mainnet.block-engine.jito.wtf/api/v1",
-#  "https://london.mainnet.block-engine.jito.wtf/api/v1",
+  "https://london.mainnet.block-engine.jito.wtf/api/v1",
 ]
 uuid = "" # Optional
 ip_addresses = [] # Optional. You should only set this when you have multiple IPs. Support single IP or CIDR format like "192.168.1.0/24"
