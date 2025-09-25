@@ -1,0 +1,93 @@
+[routing]
+[[routing.mint_config_list]]
+mint = '8Aq4fWMgPqJbF3w8w8PnLDRVUAFe4mzsCvPKxAArbonk'
+raydium_cp_pool_list = ['5NwVQbxTgdbgvttGmdEAf5oqdzDN6bRPciszDmh2U3fE']
+meteora_dlmm_pool_list = ['EDMMcG9Lt6LyisRd2qRPyC8cACsw6YwTsfcUmeHjWU76']
+lookup_table_accounts = ['4sKLJ1Qoudh8PJyqBeuKocYdsZvxTcRShUt9aKqwhgvC', 'BckDL1yzBKRgtWxaqkYqSoNxtRayEU7moRJ3kTEgK24e', '2jQVnwHXdr6t3gsjfJeWToApR48GkoTHPu6j814JicCE', 'AsQLhBq3xodjpZfpqoY4hZb5YmEM9HzoE9FjUnv7z2Qw']
+process_delay = 400
+
+[[routing.mint_config_list]]
+mint = 'GMvCfcZg8YvkkQmwDaAzCtHDrrEtgE74nQpQ7xNabonk'
+raydium_cp_pool_list = ['6sEkZ73vph5AFYmQTzaV6H5vAQQLZ2C8WqeCQ6MhLqFk']
+meteora_dlmm_pool_list = ['Gi3959wDyHbQfs612ztsh3GWw8LYHhW4fx5YSJzbihy6', 'Hn1vGAFuVfQbUfxkuGaGWucKNcX6W72fBEouNXAKA25Q', '6dE7DBJrW6mnhWVmcW3j6R2XbZeDddhfsgmDnNUBDtfa']
+lookup_table_accounts = ['4sKLJ1Qoudh8PJyqBeuKocYdsZvxTcRShUt9aKqwhgvC', 'BckDL1yzBKRgtWxaqkYqSoNxtRayEU7moRJ3kTEgK24e', '2jQVnwHXdr6t3gsjfJeWToApR48GkoTHPu6j814JicCE', 'AsQLhBq3xodjpZfpqoY4hZb5YmEM9HzoE9FjUnv7z2Qw']
+process_delay = 400
+# bundle_group = 1 # Optional, only available for jito
+
+[rpc]
+url = "https://mainnet.helius-rpc.com/?api-key=cb914ed1-234a-4d06-907d-0085eb8e1546"
+
+[spam]
+enabled = false
+enabled_bundle_groups = [1, 2, 3, 4, 5] # 减少到2个bundle组
+sending_rpc_urls = [
+  "https://rpc.shyft.to?api_key=60fh7JcX4jQ-UGBY",
+ # "https://mainnet.helius-rpc.com/?api-key=cb914ed1-234a-4d06-907d-0085eb8e1546",
+ # "https://small-virulent-ensemble.solana-mainnet.quiknode.pro/9c7099d7c7f1f009c109be1bdd3deb623435d500/",
+ # "https://rpc.constant-k.com/?api-key=jzsdo1lp-1t5f-42hm-n9ua-aqkzvmj7u53l"
+
+]
+compute_unit_price = { strategy = "Random", from = 1000, to = 3000, count = 1 } # 提高优先费用
+max_retries = 1 # 减少重试次数
+enable_simple_send = false # You should only set this to true if your sending rpc doesn't work with the default config.
+
+[jito]
+enabled = true
+enabled_bundle_groups = [1, 2, 3, 4, 5] # 减少到2个bundle组
+block_engine_urls = [
+ # "https://ny.mainnet.block-engine.jito.wtf/api/v1",
+ # "https://tokyo.mainnet.block-engine.jito.wtf/api/v1",
+ # "https://slc.mainnet.block-engine.jito.wtf/api/v1",
+  "https://amsterdam.mainnet.block-engine.jito.wtf/api/v1",
+ # "https://frankfurt.mainnet.block-engine.jito.wtf/api/v1",
+ # "https://singapore.mainnet.block-engine.jito.wtf/api/v1",
+  "https://london.mainnet.block-engine.jito.wtf/api/v1",
+]
+uuid = "" # Optional
+ip_addresses = [] # Optional. You should only set this when you have multiple IPs. Support single IP or CIDR format like "192.168.1.0/24"
+use_min_profit = true # 确保tip作为最小利润，避免亏损
+min_profit = 100_00  # 提高到0.1 SOL，确保有足够利润空间
+use_separate_tip_account = false # Optional
+no_failure_mode = false # Optional. DO NOT ENABLE THIS IF YOU DON'T KNOW WHAT THIS IS.
+block_engine_strategy = "OneByOne" # "OneByOne" or "AllAtOnce"
+
+[[sending_venders.sending_vender]]
+enabled = false
+enable_submit_batch = true
+tip_amount = { strategy = "Random", from = 1000000, to = 1000000, count = 1 }
+compute_unit_price = { strategy = "Random", from = 1031, to = 2055, count = 1 }
+urls = ["http://ams.flashblock.trade/api/v2/submit-batch"]
+auth_header = "authorization"
+auth_value = "2d0f85236bc94e8c"
+tip_accounts = [
+  "FLaShB3iXXTWE1vu9wQsChUKq3HFtpMAhb8kAh1pf1wi",
+  "FLashhsorBmM9dLpuq6qATawcpqk1Y2aqaZfkd48iT3W",
+  "FLaSHJNm5dWYzEgnHJWWJP5ccu128Mu61NJLxUf7mUXU",
+  "FLaSHR4Vv7sttd6TyDF4yR1bJyAxRwWKbohDytEMu3wL",
+  "FLASHRzANfcAKDuQ3RXv9hbkBy4WVEKDzoAgxJ56DiE4",
+  "FLasHstqx11M8W56zrSEqkCyhMCCpr6ze6Mjdvqope5s",
+  "FLAShWTjcweNT4NSotpjpxAkwxUr2we3eXQGhpTVzRwy",
+  "FLasHXTqrbNvpWFB6grN47HGZfK6pze9HLNTgbukfPSk",
+  "FLAshyAyBcKb39KPxSzXcepiS8iDYUhDGwJcJDPX4g2B",
+  "FLAsHZTRcf3Dy1APaz6j74ebdMC6Xx4g6i9YxjyrDybR",
+]
+no_failure_mode = false
+sending_strategy = "AllAtOnce" # AllAtOnce or OneByOne
+
+[jito.tip_config]
+strategy = "Random" # Random/Linear/Exponential/File
+from = 10_000  # 官方推荐最小值
+to = 100_000   # 官方推荐范围，提高竞争力
+count = 2    # 官方推荐发送3个不同tip
+
+[flashloan]
+enabled = true
+
+[bot]
+compute_unit_limit = 600_000 # Recommand at least 300_000 if you have dlmm, at least 450_000 if you have orca/raydium clmm.
+merge_mints = false # Send all the mints in the same tx
+skip_ata_creation = false # either try to create ata on bot start
+# memo = "some note" # Optional
+
+[wallet]
+private_key = ""
