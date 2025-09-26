@@ -26,7 +26,7 @@ pump_pool_list = ['xj9p7D3Yij1tkB9NUSr45GQYyx7qqJExijt5EnH5NF9']
 meteora_dlmm_pool_list = ['jxseCaVuAsYSBxQHiQg8KYaqZiutEtwqKXUbxEhwxjs']
 lookup_table_accounts = ['4sKLJ1Qoudh8PJyqBeuKocYdsZvxTcRShUt9aKqwhgvC', '5EcD37f2h7Maoqhqzzt4k5UfYfzb8Ht7HRKLpp7wnXFB', '79iTbW7pkP9cZn437KRaGzdyYwwnzYxSB8YboaSbx8Ko', 'Hk9UM93dizuq6MrG1xrb2pZ3MSWpStvaV4LnMzkdfd18']
 process_delay = 400
-# bundle_group = 1 # Optional, only available for jito
+bundle_group = 1 # Optional, only available for jito
 
 [rpc]
 url = "https://mainnet.helius-rpc.com/?api-key=cb914ed1-234a-4d06-907d-0085eb8e1546"
@@ -47,7 +47,7 @@ enable_simple_send = false # You should only set this to true if your sending rp
 
 [jito]
 enabled = true
-enabled_bundle_groups = [1, 2, 3, 4, 5] # 减少到2个bundle组
+enabled_bundle_groups = [1, 2, 3, 4] # 减少到2个bundle组
 block_engine_urls = [
  # "https://ny.mainnet.block-engine.jito.wtf/api/v1",
  # "https://tokyo.mainnet.block-engine.jito.wtf/api/v1",
@@ -99,7 +99,7 @@ enabled = true
 
 [bot]
 compute_unit_limit = 600_000 # Recommand at least 300_000 if you have dlmm, at least 450_000 if you have orca/raydium clmm.
-merge_mints = false # Send all the mints in the same tx
+merge_mints = true # Send all the mints in the same tx
 skip_ata_creation = false # either try to create ata on bot start
 # memo = "some note" # Optional
 
