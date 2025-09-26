@@ -1,4 +1,4 @@
-[routing]
+
 [[routing.mint_config_list]]
 mint = '7W4geAJyy7hxuPXESMMBaW8Zi4MbhVN9uvt6BJ2SEPAV'
 pump_pool_list = ['DA3Sahnb2vurW6hix5atGduPsxVqN2v7Ur1XhhJPQLER']
