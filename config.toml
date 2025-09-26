@@ -91,7 +91,7 @@ sending_strategy = "AllAtOnce" # AllAtOnce or OneByOne
 [jito.tip_config]
 strategy = "Random" # Random/Linear/Exponential/File
 from = 10_000  # 官方推荐最小值
-to = 10_000   # 官方推荐范围，提高竞争力
+to = 50_000   # 官方推荐范围，提高竞争力
 count = 3    # 官方推荐发送3个不同tip
 
 [flashloan]
