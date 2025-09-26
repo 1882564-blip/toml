@@ -47,7 +47,7 @@ enable_simple_send = false # You should only set this to true if your sending rp
 
 [jito]
 enabled = true
-enabled_bundle_groups = [1, 2, 3, 4,5] # 减少到2个bundle组
+enabled_bundle_groups = [1, 2, 3, 4] # 减少到2个bundle组
 block_engine_urls = [
  # "https://ny.mainnet.block-engine.jito.wtf/api/v1",
  # "https://tokyo.mainnet.block-engine.jito.wtf/api/v1",
