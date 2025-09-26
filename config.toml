@@ -8,7 +8,7 @@ process_delay = 400
 # bundle_group = 1 # Optional, only available for jito
 
 [rpc]
-url = "https://mainnet.helius-rpc.com/?api-key=cb914ed1-234a-4d06-907d-0085eb8e1546"
+url = "https://rpc.shyft.to?api_key=60fh7JcX4jQ-UGBY"
 
 [spam]
 enabled = false
