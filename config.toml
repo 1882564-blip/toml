@@ -5,28 +5,28 @@ raydium_cp_pool_list = ['6sEkZ73vph5AFYmQTzaV6H5vAQQLZ2C8WqeCQ6MhLqFk'] #usd1-1
 meteora_dlmm_pool_list = ['Gi3959wDyHbQfs612ztsh3GWw8LYHhW4fx5YSJzbihy6', '6dE7DBJrW6mnhWVmcW3j6R2XbZeDddhfsgmDnNUBDtfa', 'Hn1vGAFuVfQbUfxkuGaGWucKNcX6W72fBEouNXAKA25Q'] #1-sol 池子
 lookup_table_accounts = ['4sKLJ1Qoudh8PJyqBeuKocYdsZvxTcRShUt9aKqwhgvC', '9ooxXkxXETDkHCcgnoRB5ZbfsK8ikJV4x8PuDJjVwFLR', '6Ec5FSpAgtQR8BqB36ZB3FNWTrhA1S3Y4SQPonyc9TmU', 'Am5VPucydnKtWeLsfei2wmkRfWE7iDy5HNfE4WcnHQq3']
 process_delay = 400
-bundle_group = 1
+
 [[routing.mint_config_list]]
 mint = 'Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk'
 raydium_cp_pool_list = ['Q2sPHPdUWFMg7M7wwrQKLrn619cAucfRsmhVJffodSp']
 meteora_dlmm_pool_list = ['8ztFxjFPfVUtEf4SLSapcFj8GW2dxyUA9no2bLPq7H7V']
 lookup_table_accounts = ['4sKLJ1Qoudh8PJyqBeuKocYdsZvxTcRShUt9aKqwhgvC', '2jQVnwHXdr6t3gsjfJeWToApR48GkoTHPu6j814JicCE', 'Am5VPucydnKtWeLsfei2wmkRfWE7iDy5HNfE4WcnHQq3']
 process_delay = 400
-bundle_group = 1
+
 [[routing.mint_config_list]]
 mint = 'AXvGZY45yFbJ9jWN23kk7zGKj8wgc1Fk5CvxVLsvbonk'
 raydium_cp_pool_list = ['7VjWKyrLtWLctcDwtXJeu29N4653FEtN923opFsZ4j6N']
 meteora_dlmm_pool_list = ['6ybgMVaEJwU2U9JLGgWCM5pMzLNAoKtpk1rECvSnHzdA']
 lookup_table_accounts = ['4sKLJ1Qoudh8PJyqBeuKocYdsZvxTcRShUt9aKqwhgvC', '5EcD37f2h7Maoqhqzzt4k5UfYfzb8Ht7HRKLpp7wnXFB', '79iTbW7pkP9cZn437KRaGzdyYwwnzYxSB8YboaSbx8Ko', 'Hk9UM93dizuq6MrG1xrb2pZ3MSWpStvaV4LnMzkdfd18']
 process_delay = 400
-bundle_group = 2
+
 [[routing.mint_config_list]]
 mint = 'BqndqeBCNSEftBKmbTbLVx1RX5zd5J3AGL9sG55Jpump'
 pump_pool_list = ['xj9p7D3Yij1tkB9NUSr45GQYyx7qqJExijt5EnH5NF9']
 meteora_dlmm_pool_list = ['jxseCaVuAsYSBxQHiQg8KYaqZiutEtwqKXUbxEhwxjs']
 lookup_table_accounts = ['4sKLJ1Qoudh8PJyqBeuKocYdsZvxTcRShUt9aKqwhgvC', '5EcD37f2h7Maoqhqzzt4k5UfYfzb8Ht7HRKLpp7wnXFB', '79iTbW7pkP9cZn437KRaGzdyYwwnzYxSB8YboaSbx8Ko', 'Hk9UM93dizuq6MrG1xrb2pZ3MSWpStvaV4LnMzkdfd18']
 process_delay = 400
-bundle_group = 2 # Optional, only available for jito
+# bundle_group = 1 # Optional, only available for jito
 
 [rpc]
 url = "https://mainnet.helius-rpc.com/?api-key=cb914ed1-234a-4d06-907d-0085eb8e1546"
@@ -47,7 +47,7 @@ enable_simple_send = false # You should only set this to true if your sending rp
 
 [jito]
 enabled = true
-enabled_bundle_groups = [1, 2, 3, 4] # 减少到2个bundle组
+enabled_bundle_groups = [1, 2, 3, 4,5] # 减少到2个bundle组
 block_engine_urls = [
  # "https://ny.mainnet.block-engine.jito.wtf/api/v1",
  # "https://tokyo.mainnet.block-engine.jito.wtf/api/v1",
@@ -91,7 +91,7 @@ sending_strategy = "AllAtOnce" # AllAtOnce or OneByOne
 [jito.tip_config]
 strategy = "Random" # Random/Linear/Exponential/File
 from = 10_000  # 官方推荐最小值
-to = 100_000   # 官方推荐范围，提高竞争力
+to = 10_000   # 官方推荐范围，提高竞争力
 count = 3    # 官方推荐发送3个不同tip
 
 [flashloan]
@@ -99,7 +99,7 @@ enabled = true
 
 [bot]
 compute_unit_limit = 600_000 # Recommand at least 300_000 if you have dlmm, at least 450_000 if you have orca/raydium clmm.
-merge_mints = true # Send all the mints in the same tx
+merge_mints = false # Send all the mints in the same tx
 skip_ata_creation = false # either try to create ata on bot start
 # memo = "some note" # Optional
 
