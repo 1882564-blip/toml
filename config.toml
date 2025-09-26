@@ -3,7 +3,7 @@
 mint = '7W4geAJyy7hxuPXESMMBaW8Zi4MbhVN9uvt6BJ2SEPAV'
 pump_pool_list = ['DA3Sahnb2vurW6hix5atGduPsxVqN2v7Ur1XhhJPQLER']
 meteora_dlmm_pool_list = ['9Ctv9QBVZ8ntCZP5keQE67NUQRn5Y7NZhn6od9ieoaMe', '3CmkcKzyGUF3hjUwx8TFMEAd2XZEHCnC4FTP9Q4k7Fp6', '5c2MJRYP9CwaCSUFitytKvSWTtS8HGm9vK5QmDBPsiDX']
-lookup_table_accounts = ['4sKLJ1Qoudh8PJyqBeuKocYdsZvxTcRShUt9aKqwhgvC']
+lookup_table_accounts = ['4sKLJ1Qoudh8PJyqBeuKocYdsZvxTcRShUt9aKqwhgvC', 'BAfgiddJhEHPwAUWoTpFUVDzFkiRMaEjGHi2pYgf4pKs']
 process_delay = 400
 # bundle_group = 1 # Optional, only available for jito
 
