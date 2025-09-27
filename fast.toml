@@ -109,7 +109,7 @@ enabled = false
 
 [bot]
 compute_unit_limit = 600_000 # Recommand at least 300_000 if you have dlmm, at least 450_000 if you have orca/raydium clmm.
-merge_mints = true # Send all the mints in the same tx
+merge_mints = false # Send all the mints in the same tx
 skip_ata_creation = false # either try to create ata on bot start
 # memo = "some note" # Optional
 
