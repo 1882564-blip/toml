@@ -57,7 +57,7 @@ max_retries = 1 # 减少重试次数
 enable_simple_send = false # You should only set this to true if your sending rpc doesn't work with the default config.
 
 [jito]
-enabled = true
+enabled = false
 enabled_bundle_groups = [1] # 减少到2个bundle组
 block_engine_urls = [
   "https://ny.mainnet.block-engine.jito.wtf/api/v1",
@@ -78,6 +78,9 @@ block_engine_strategy = "AllAtOnce" # "OneByOne" or "AllAtOnce"
 
 [[sending_venders.sending_vender]]
 enabled = false
+enabled_bundle_groups = [1] # Optional
+use_min_profit = true # Optional
+min_profit = 10_000 # Optiona
 tip_amount = { strategy = "Random", from = 7_500, to = 7_500, count = 1 }
 compute_unit_price = { strategy = "Random", from = 1031, to = 2055, count = 1 }
 urls = [
@@ -95,7 +98,7 @@ tip_accounts = [
   "FASTCKnwwY6iL3CknRgg3Zqir7jeagDDhxSnBQQy5a1C",
   "FASTKL1AamNKrwnvbKwo4PU8434BBdqVrTtugM6oDU71"
 ]
-no_failure_mode = true
+no_failure_mode = false
 sending_strategy = "AllAtOnce"  # AllAtOnce or OneByOne
 
 [jito.tip_config]
