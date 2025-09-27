@@ -1,0 +1,112 @@
+[routing]
+[[routing.mint_config_list]]
+mint = '7W4geAJyy7hxuPXESMMBaW8Zi4MbhVN9uvt6BJ2SEPAV'
+pump_pool_list = ['DA3Sahnb2vurW6hix5atGduPsxVqN2v7Ur1XhhJPQLER']
+meteora_dlmm_pool_list = ['9Ctv9QBVZ8ntCZP5keQE67NUQRn5Y7NZhn6od9ieoaMe', '3CmkcKzyGUF3hjUwx8TFMEAd2XZEHCnC4FTP9Q4k7Fp6', '5c2MJRYP9CwaCSUFitytKvSWTtS8HGm9vK5QmDBPsiDX']
+lookup_table_accounts = ['4sKLJ1Qoudh8PJyqBeuKocYdsZvxTcRShUt9aKqwhgvC', 'BAfgiddJhEHPwAUWoTpFUVDzFkiRMaEjGHi2pYgf4pKs']
+process_delay = 400
+[[routing.mint_config_list]]
+mint = 'GMvCfcZg8YvkkQmwDaAzCtHDrrEtgE74nQpQ7xNabonk' #1
+raydium_cp_pool_list = ['6sEkZ73vph5AFYmQTzaV6H5vAQQLZ2C8WqeCQ6MhLqFk'] #usd1-1
+meteora_dlmm_pool_list = ['Gi3959wDyHbQfs612ztsh3GWw8LYHhW4fx5YSJzbihy6', '6dE7DBJrW6mnhWVmcW3j6R2XbZeDddhfsgmDnNUBDtfa', 'Hn1vGAFuVfQbUfxkuGaGWucKNcX6W72fBEouNXAKA25Q'] #1-sol 池子
+lookup_table_accounts = ['4sKLJ1Qoudh8PJyqBeuKocYdsZvxTcRShUt9aKqwhgvC', '9ooxXkxXETDkHCcgnoRB5ZbfsK8ikJV4x8PuDJjVwFLR', '6Ec5FSpAgtQR8BqB36ZB3FNWTrhA1S3Y4SQPonyc9TmU', 'Am5VPucydnKtWeLsfei2wmkRfWE7iDy5HNfE4WcnHQq3']
+process_delay = 400
+
+[[routing.mint_config_list]]
+mint = 'Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk'
+raydium_cp_pool_list = ['Q2sPHPdUWFMg7M7wwrQKLrn619cAucfRsmhVJffodSp']
+meteora_dlmm_pool_list = ['8ztFxjFPfVUtEf4SLSapcFj8GW2dxyUA9no2bLPq7H7V']
+lookup_table_accounts = ['4sKLJ1Qoudh8PJyqBeuKocYdsZvxTcRShUt9aKqwhgvC', '2jQVnwHXdr6t3gsjfJeWToApR48GkoTHPu6j814JicCE', 'Am5VPucydnKtWeLsfei2wmkRfWE7iDy5HNfE4WcnHQq3']
+process_delay = 400
+
+[[routing.mint_config_list]]
+mint = 'AXvGZY45yFbJ9jWN23kk7zGKj8wgc1Fk5CvxVLsvbonk'
+raydium_cp_pool_list = ['7VjWKyrLtWLctcDwtXJeu29N4653FEtN923opFsZ4j6N']
+meteora_dlmm_pool_list = ['6ybgMVaEJwU2U9JLGgWCM5pMzLNAoKtpk1rECvSnHzdA']
+lookup_table_accounts = ['4sKLJ1Qoudh8PJyqBeuKocYdsZvxTcRShUt9aKqwhgvC', '5EcD37f2h7Maoqhqzzt4k5UfYfzb8Ht7HRKLpp7wnXFB', '79iTbW7pkP9cZn437KRaGzdyYwwnzYxSB8YboaSbx8Ko', 'Hk9UM93dizuq6MrG1xrb2pZ3MSWpStvaV4LnMzkdfd18']
+process_delay = 400
+
+[[routing.mint_config_list]]
+mint = 'BqndqeBCNSEftBKmbTbLVx1RX5zd5J3AGL9sG55Jpump'
+pump_pool_list = ['xj9p7D3Yij1tkB9NUSr45GQYyx7qqJExijt5EnH5NF9']
+meteora_dlmm_pool_list = ['jxseCaVuAsYSBxQHiQg8KYaqZiutEtwqKXUbxEhwxjs']
+lookup_table_accounts = ['4sKLJ1Qoudh8PJyqBeuKocYdsZvxTcRShUt9aKqwhgvC', '5EcD37f2h7Maoqhqzzt4k5UfYfzb8Ht7HRKLpp7wnXFB', '79iTbW7pkP9cZn437KRaGzdyYwwnzYxSB8YboaSbx8Ko', 'Hk9UM93dizuq6MrG1xrb2pZ3MSWpStvaV4LnMzkdfd18']
+process_delay = 400
+# bundle_group = 1 # Optional, only available for jito
+
+[rpc]
+url = "https://rpc.shyft.to?api_key=60fh7JcX4jQ-UGBY"
+
+[spam]
+enabled = false
+enabled_bundle_groups = [1, 2, 3, 4, 5] # 减少到2个bundle组
+sending_rpc_urls = [
+  "https://rpc.shyft.to?api_key=60fh7JcX4jQ-UGBY",
+ # "https://mainnet.helius-rpc.com/?api-key=cb914ed1-234a-4d06-907d-0085eb8e1546",
+ # "https://small-virulent-ensemble.solana-mainnet.quiknode.pro/9c7099d7c7f1f009c109be1bdd3deb623435d500/",
+ # "https://rpc.constant-k.com/?api-key=jzsdo1lp-1t5f-42hm-n9ua-aqkzvmj7u53l"
+
+]
+compute_unit_price = { strategy = "Random", from = 1000, to = 3000, count = 1 } # 提高优先费用
+max_retries = 1 # 减少重试次数
+enable_simple_send = false # You should only set this to true if your sending rpc doesn't work with the default config.
+
+[jito]
+enabled = true
+enabled_bundle_groups = [1, 2, 3, 4 ,5] # 减少到2个bundle组
+block_engine_urls = [
+  "https://ny.mainnet.block-engine.jito.wtf/api/v1",
+ # "https://tokyo.mainnet.block-engine.jito.wtf/api/v1",
+  "https://slc.mainnet.block-engine.jito.wtf/api/v1",
+  "https://amsterdam.mainnet.block-engine.jito.wtf/api/v1",
+  "https://frankfurt.mainnet.block-engine.jito.wtf/api/v1",
+  "https://singapore.mainnet.block-engine.jito.wtf/api/v1",
+  "https://london.mainnet.block-engine.jito.wtf/api/v1",
+]
+uuid = "" # Optional
+ip_addresses = [] # Optional. You should only set this when you have multiple IPs. Support single IP or CIDR format like "192.168.1.0/24"
+use_min_profit = true # 确保tip作为最小利润，避免亏损
+min_profit = 10_000  # 提高到0.1 SOL，确保有足够利润空间
+use_separate_tip_account = true # Optional 
+no_failure_mode = false # Optional. DO NOT ENABLE THIS IF YOU DON'T KNOW WHAT THIS IS.
+block_engine_strategy = "AllAtOnce" # "OneByOne" or "AllAtOnce"
+
+[[sending_venders.sending_vender]]
+enabled = true
+tip_amount = { strategy = "Random", from = 7_500, to = 7_500, count = 1 }
+compute_unit_price = { strategy = "Random", from = 1031, to = 2055, count = 1 }
+urls = [
+    "https://fast.circular.fi/transactions/no-failure/smb",
+]
+auth_header = "x-api-key"
+auth_value = "1f8c306e-ba86-4b55-9f22-fa4ce01cc1fb"
+tip_accounts = [
+  "FAST3dMFZvESiEipBvLSiXq3QCV51o3xuoHScqRU6cB6",
+  "FASTHPW6akdGh9PFSdhMTbCuGkCSX7LsUjjnaB2RTQ4v",
+  "FASTYKWXRfAoty7SQCM1mGVrmPUyyNcF4tc3DUkLDAu9",
+  "FASTPB76TxKPMZ7Q29m8v4zJn8gUjbWyvTEQaaxhwN7M",
+  "FASTs6ctgbsuZegMzUs4DPUYhRSZUPCjgCVnttHbpQAp",
+  "FASTYmSidNfLwdwiQEhCTtzghxEtaipeNSDSwh9xDPs3",
+  "FASTCKnwwY6iL3CknRgg3Zqir7jeagDDhxSnBQQy5a1C",
+  "FASTKL1AamNKrwnvbKwo4PU8434BBdqVrTtugM6oDU71"
+]
+no_failure_mode = true
+sending_strategy = "AllAtOnce"  # AllAtOnce or OneByOne
+
+[jito.tip_config]
+strategy = "Random" # Random/Linear/Exponential/File
+from = 10_000  # 官方推荐最小值
+to = 50_000   # 官方推荐范围，提高竞争力
+count = 3    # 官方推荐发送3个不同tip
+
+[flashloan]
+enabled = false
+
+[bot]
+compute_unit_limit = 600_000 # Recommand at least 300_000 if you have dlmm, at least 450_000 if you have orca/raydium clmm.
+merge_mints = false # Send all the mints in the same tx
+skip_ata_creation = false # either try to create ata on bot start
+# memo = "some note" # Optional
+
+[wallet]
+private_key = ""
