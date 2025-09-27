@@ -72,7 +72,7 @@ no_failure_mode = false # Optional. DO NOT ENABLE THIS IF YOU DON'T KNOW WHAT TH
 block_engine_strategy = "AllAtOnce" # "OneByOne" or "AllAtOnce"
 
 [[sending_venders.sending_vender]]
-enabled = false
+enabled = true
 tip_amount = { strategy = "Random", from = 7_500, to = 7_500, count = 1 }
 compute_unit_price = { strategy = "Random", from = 1031, to = 2055, count = 1 }
 urls = [
