@@ -79,8 +79,6 @@ block_engine_strategy = "AllAtOnce" # "OneByOne" or "AllAtOnce"
 [[sending_venders.sending_vender]]
 enabled = true
 enabled_bundle_groups = [1] # Optional
-use_min_profit = true # Optional
-min_profit = 10_000 # Optiona
 tip_amount = { strategy = "Random", from = 7_500, to = 7_500, count = 1 }
 compute_unit_price = { strategy = "Random", from = 1031, to = 2055, count = 1 }
 urls = [
