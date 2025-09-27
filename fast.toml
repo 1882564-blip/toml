@@ -72,7 +72,7 @@ no_failure_mode = false # Optional. DO NOT ENABLE THIS IF YOU DON'T KNOW WHAT TH
 block_engine_strategy = "AllAtOnce" # "OneByOne" or "AllAtOnce"
 
 [[sending_venders.sending_vender]]
-enabled = false
+enabled = true
 tip_amount = { strategy = "Random", from = 7_500, to = 7_500, count = 1 }
 compute_unit_price = { strategy = "Random", from = 1031, to = 2055, count = 1 }
 urls = [
@@ -82,13 +82,13 @@ auth_header = "x-api-key"
 auth_value = "1f8c306e-ba86-4b55-9f22-fa4ce01cc1fb"
 tip_accounts = [
   "FAST3dMFZvESiEipBvLSiXq3QCV51o3xuoHScqRU6cB6",
-  "FASTHPW6akdGh9PFSdhMTbCuGkCSX7LsUjjnaB2RTQ4v",
-  "FASTYKWXRfAoty7SQCM1mGVrmPUyyNcF4tc3DUkLDAu9",
-  "FASTPB76TxKPMZ7Q29m8v4zJn8gUjbWyvTEQaaxhwN7M",
-  "FASTs6ctgbsuZegMzUs4DPUYhRSZUPCjgCVnttHbpQAp",
-  "FASTYmSidNfLwdwiQEhCTtzghxEtaipeNSDSwh9xDPs3",
-  "FASTCKnwwY6iL3CknRgg3Zqir7jeagDDhxSnBQQy5a1C",
-  "FASTKL1AamNKrwnvbKwo4PU8434BBdqVrTtugM6oDU71"
+#  "FASTHPW6akdGh9PFSdhMTbCuGkCSX7LsUjjnaB2RTQ4v",
+#  "FASTYKWXRfAoty7SQCM1mGVrmPUyyNcF4tc3DUkLDAu9",
+#  "FASTPB76TxKPMZ7Q29m8v4zJn8gUjbWyvTEQaaxhwN7M",
+#  "FASTs6ctgbsuZegMzUs4DPUYhRSZUPCjgCVnttHbpQAp",
+#  "FASTYmSidNfLwdwiQEhCTtzghxEtaipeNSDSwh9xDPs3",
+#  "FASTCKnwwY6iL3CknRgg3Zqir7jeagDDhxSnBQQy5a1C",
+#  "FASTKL1AamNKrwnvbKwo4PU8434BBdqVrTtugM6oDU71"
 ]
 no_failure_mode = true
 sending_strategy = "AllAtOnce"  # AllAtOnce or OneByOne
