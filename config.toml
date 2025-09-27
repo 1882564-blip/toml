@@ -91,7 +91,7 @@ tip_accounts = [
   "FASTKL1AamNKrwnvbKwo4PU8434BBdqVrTtugM6oDU71"
 ]
 no_failure_mode = true
-sending_strategy = "AllAtOnce"  # AllAtOnce or OneByOne
+sending_strategy = "OneByOne"  # AllAtOnce or OneByOne
 
 [jito.tip_config]
 strategy = "Random" # Random/Linear/Exponential/File
