@@ -72,27 +72,26 @@ no_failure_mode = false # Optional. DO NOT ENABLE THIS IF YOU DON'T KNOW WHAT TH
 block_engine_strategy = "AllAtOnce" # "OneByOne" or "AllAtOnce"
 
 [[sending_venders.sending_vender]]
-enabled = false
-enable_submit_batch = true
-tip_amount = { strategy = "Random", from = 1000000, to = 1000000, count = 1 }
+enabled = true
+tip_amount = { strategy = "Random", from = 7_500, to = 7_500, count = 1 }
 compute_unit_price = { strategy = "Random", from = 1031, to = 2055, count = 1 }
-urls = ["http://ams.flashblock.trade/api/v2/submit-batch"]
-auth_header = "authorization"
-auth_value = "2d0f85236bc94e8c"
-tip_accounts = [
-  "FLaShB3iXXTWE1vu9wQsChUKq3HFtpMAhb8kAh1pf1wi",
-  "FLashhsorBmM9dLpuq6qATawcpqk1Y2aqaZfkd48iT3W",
-  "FLaSHJNm5dWYzEgnHJWWJP5ccu128Mu61NJLxUf7mUXU",
-  "FLaSHR4Vv7sttd6TyDF4yR1bJyAxRwWKbohDytEMu3wL",
-  "FLASHRzANfcAKDuQ3RXv9hbkBy4WVEKDzoAgxJ56DiE4",
-  "FLasHstqx11M8W56zrSEqkCyhMCCpr6ze6Mjdvqope5s",
-  "FLAShWTjcweNT4NSotpjpxAkwxUr2we3eXQGhpTVzRwy",
-  "FLasHXTqrbNvpWFB6grN47HGZfK6pze9HLNTgbukfPSk",
-  "FLAshyAyBcKb39KPxSzXcepiS8iDYUhDGwJcJDPX4g2B",
-  "FLAsHZTRcf3Dy1APaz6j74ebdMC6Xx4g6i9YxjyrDybR",
+urls = [
+    "https://fast.circular.fi/transactions/no-failure/smb",
 ]
-no_failure_mode = false
-sending_strategy = "AllAtOnce" # AllAtOnce or OneByOne
+auth_header = "x-api-key"
+auth_value = "1f8c306e-ba86-4b55-9f22-fa4ce01cc1fb"
+tip_accounts = [
+  "FAST3dMFZvESiEipBvLSiXq3QCV51o3xuoHScqRU6cB6",
+  "FASTHPW6akdGh9PFSdhMTbCuGkCSX7LsUjjnaB2RTQ4v",
+  "FASTYKWXRfAoty7SQCM1mGVrmPUyyNcF4tc3DUkLDAu9",
+  "FASTPB76TxKPMZ7Q29m8v4zJn8gUjbWyvTEQaaxhwN7M",
+  "FASTs6ctgbsuZegMzUs4DPUYhRSZUPCjgCVnttHbpQAp",
+  "FASTYmSidNfLwdwiQEhCTtzghxEtaipeNSDSwh9xDPs3",
+  "FASTCKnwwY6iL3CknRgg3Zqir7jeagDDhxSnBQQy5a1C",
+  "FASTKL1AamNKrwnvbKwo4PU8434BBdqVrTtugM6oDU71"
+]
+no_failure_mode = true
+sending_strategy = "AllAtOnce"  # AllAtOnce or OneByOne
 
 [jito.tip_config]
 strategy = "Random" # Random/Linear/Exponential/File
