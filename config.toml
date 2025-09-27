@@ -66,13 +66,13 @@ block_engine_urls = [
 uuid = "" # Optional
 ip_addresses = [] # Optional. You should only set this when you have multiple IPs. Support single IP or CIDR format like "192.168.1.0/24"
 use_min_profit = true # 确保tip作为最小利润，避免亏损
-min_profit = 10_00  # 提高到0.1 SOL，确保有足够利润空间
+min_profit = 10_000  # 提高到0.1 SOL，确保有足够利润空间
 use_separate_tip_account = true # Optional 
 no_failure_mode = false # Optional. DO NOT ENABLE THIS IF YOU DON'T KNOW WHAT THIS IS.
 block_engine_strategy = "AllAtOnce" # "OneByOne" or "AllAtOnce"
 
 [[sending_venders.sending_vender]]
-enabled = false
+enabled = true
 tip_amount = { strategy = "Random", from = 7_500, to = 7_500, count = 1 }
 compute_unit_price = { strategy = "Random", from = 1031, to = 2055, count = 1 }
 urls = [
