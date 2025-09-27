@@ -77,7 +77,7 @@ no_failure_mode = false # Optional. DO NOT ENABLE THIS IF YOU DON'T KNOW WHAT TH
 block_engine_strategy = "AllAtOnce" # "OneByOne" or "AllAtOnce"
 
 [[sending_venders.sending_vender]]
-enabled = false
+enabled = true
 enabled_bundle_groups = [1] # Optional
 use_min_profit = true # Optional
 min_profit = 10_000 # Optiona
