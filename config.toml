@@ -133,7 +133,7 @@ request_params = { skipPreflight = true }
 
 [jito.tip_config]
 strategy = "Random" # Random/Linear/Exponential/File
-from = 1_00_00 # 官方推荐最小值
+from = 1_000_000 # 官方推荐最小值
 to = 1_000_000   # 官方推荐范围，提高竞争力
 count = 1    # 官方推荐发送3个不同tip
 
