@@ -4,7 +4,7 @@ mint = '5ThrLJDFpJqaFL36AvAX8ECZmz6n4vZvqMYvpHHkpump'
 pump_pool_list = ['ATS4H3AnceUhLifUn8Gh8tLtuF4XZprXYV4b9RbFe2wM']
 meteora_dlmm_pool_list = ['HSR8n763H7ou37YZiiweeVEBfCAtoh648RHu36DNyn6W']
 lookup_table_accounts = ['4sKLJ1Qoudh8PJyqBeuKocYdsZvxTcRShUt9aKqwhgvC', 'H9mfqE3z5V2vVFSmPknEYvaaAY49rTUogbHqPCutxfgq','8kZBs5YVZjijsxWWqoK7SHDZkn4D1BYh4Qt22LRfwUQx', 'BvgAx4X7jy9dCTNMPnRDUnjGcKXd9jYhDK6uzkLZt7B5', '3a3Rvf5m1CLzDVAhQtqLFXsvhnPLN2qCVgkLcQ2xWq9Y', '8juzNuFn11aUXhZ3prHWTkZztvrJRnoYzDJETqWyaNT3']
-process_delay = 950
+process_delay = 980
 bundle_group = 1
 
 [[routing.mint_config_list]]
@@ -12,7 +12,7 @@ mint = '7W4geAJyy7hxuPXESMMBaW8Zi4MbhVN9uvt6BJ2SEPAV'
 pump_pool_list = ['DA3Sahnb2vurW6hix5atGduPsxVqN2v7Ur1XhhJPQLER']
 meteora_dlmm_pool_list = ['9Ctv9QBVZ8ntCZP5keQE67NUQRn5Y7NZhn6od9ieoaMe', '3CmkcKzyGUF3hjUwx8TFMEAd2XZEHCnC4FTP9Q4k7Fp6', '5c2MJRYP9CwaCSUFitytKvSWTtS8HGm9vK5QmDBPsiDX']
 lookup_table_accounts = ['4sKLJ1Qoudh8PJyqBeuKocYdsZvxTcRShUt9aKqwhgvC', 'H9mfqE3z5V2vVFSmPknEYvaaAY49rTUogbHqPCutxfgq','BAfgiddJhEHPwAUWoTpFUVDzFkiRMaEjGHi2pYgf4pKs']
-process_delay = 950
+process_delay = 980
 bundle_group = 1
 
 [[routing.mint_config_list]]
@@ -20,7 +20,7 @@ mint = 'GMvCfcZg8YvkkQmwDaAzCtHDrrEtgE74nQpQ7xNabonk' #1
 raydium_cp_pool_list = ['6sEkZ73vph5AFYmQTzaV6H5vAQQLZ2C8WqeCQ6MhLqFk'] #usd1-1
 meteora_dlmm_pool_list = ['Gi3959wDyHbQfs612ztsh3GWw8LYHhW4fx5YSJzbihy6', '6dE7DBJrW6mnhWVmcW3j6R2XbZeDddhfsgmDnNUBDtfa', 'Hn1vGAFuVfQbUfxkuGaGWucKNcX6W72fBEouNXAKA25Q'] #1-sol 池子
 lookup_table_accounts = ['4sKLJ1Qoudh8PJyqBeuKocYdsZvxTcRShUt9aKqwhgvC', 'H9mfqE3z5V2vVFSmPknEYvaaAY49rTUogbHqPCutxfgq','9ooxXkxXETDkHCcgnoRB5ZbfsK8ikJV4x8PuDJjVwFLR', '6Ec5FSpAgtQR8BqB36ZB3FNWTrhA1S3Y4SQPonyc9TmU', 'Am5VPucydnKtWeLsfei2wmkRfWE7iDy5HNfE4WcnHQq3']
-process_delay = 950
+process_delay = 980
 bundle_group = 2
 
 [rpc]
