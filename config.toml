@@ -30,6 +30,23 @@ meteora_dlmm_pool_list = ['8ztFxjFPfVUtEf4SLSapcFj8GW2dxyUA9no2bLPq7H7V']
 lookup_table_accounts = ['4sKLJ1Qoudh8PJyqBeuKocYdsZvxTcRShUt9aKqwhgvC', '2jQVnwHXdr6t3gsjfJeWToApR48GkoTHPu6j814JicCE', 'Am5VPucydnKtWeLsfei2wmkRfWE7iDy5HNfE4WcnHQq3']
 process_delay = 980
 bundle_group = 2
+
+[[routing.mint_config_list]]
+mint = 'E3oEF6TZb5DssCqwyXRt31AUEnGqvcHeVcyGvLiqpump'
+pump_pool_list = ['8gKxMRiCBL6tiT13hWpxgzXTvihcq7C1UwgCXYywXQ1P']
+meteora_dlmm_pool_list = ['Bdxpzt7xATkQ1Tyhuz2fX2YPm326zaFD4FLEPz9U1SWu']
+lookup_table_accounts = ['J8zFdp5wdxNAJJVXNoXgXLk5W7HTVnadLHFF22hkV5gq', '8juzNuFn11aUXhZ3prHWTkZztvrJRnoYzDJETqWyaNT3', '886RQAGt31LRm67ciXkN7avuLCaTGj39stzDHx4o57e5', 'A454XdBXFcXX2BxJzwxiqKTZFW3Nt2eAHvNtRZL659J7', 'EdCcNjgqq6PWkL4nHgbLVMNvGfcmCJpjESrrW9NLyx9n', 'BvgAx4X7jy9dCTNMPnRDUnjGcKXd9jYhDK6uzkLZt7B5', '3gZFeLR7ZNz1q72TKmwgVMQY7JwyXC89GgsCuZyRAjCT', 'CjAf5rt5xAmy8z3z5igT4ULK6PnZGLMjTfoG5Y4PKytF', '4sKLJ1Qoudh8PJyqBeuKocYdsZvxTcRShUt9aKqwhgvC']
+process_delay = 980
+bundle_group = 3
+
+[[routing.mint_config_list]]
+mint = '5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2'
+pump_pool_list = ['4w2cysotX6czaUGmmWg13hDpY4QEMG2CzeKYEQyK9Ama']
+meteora_dlmm_pool_list = ['Cgnuirsk5dQ9Ka1Grnru7J8YW1sYncYUjiXvYxT7G4iZ']
+lookup_table_accounts = ['J8zFdp5wdxNAJJVXNoXgXLk5W7HTVnadLHFF22hkV5gq', '8juzNuFn11aUXhZ3prHWTkZztvrJRnoYzDJETqWyaNT3', '886RQAGt31LRm67ciXkN7avuLCaTGj39stzDHx4o57e5', 'A454XdBXFcXX2BxJzwxiqKTZFW3Nt2eAHvNtRZL659J7', 'EdCcNjgqq6PWkL4nHgbLVMNvGfcmCJpjESrrW9NLyx9n', 'BvgAx4X7jy9dCTNMPnRDUnjGcKXd9jYhDK6uzkLZt7B5', '3gZFeLR7ZNz1q72TKmwgVMQY7JwyXC89GgsCuZyRAjCT', 'CjAf5rt5xAmy8z3z5igT4ULK6PnZGLMjTfoG5Y4PKytF', '4sKLJ1Qoudh8PJyqBeuKocYdsZvxTcRShUt9aKqwhgvC']
+process_delay = 980
+bundle_group = 3
+
 [rpc]
 url = "https://mainnet.helius-rpc.com/?api-key=d3856564-fb89-4049-afe4-e5660610ef6a"
 
